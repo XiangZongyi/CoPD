@@ -12,7 +12,7 @@ pytorch=1.12.0
 
 numpy=1.24.3
 
-scipy=1.11.1 
+scipy=1.10.1 
 
 ## Runing commands 
 ---
