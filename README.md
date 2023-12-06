@@ -22,22 +22,22 @@ scipy=1.11.1
 
 -->on Elec & Phone: 
 ```shell
-CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset electronic_phone --lambda1 1 --lambda2 1 
+CUDA_VISIBLE_DEVICES=0 python train_rec.py --dataset electronic_phone --lambda1 1 --lambda2 1 
 ```
 
 -->on Sport & Cloth: 
 ```shell
-CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset sport_cloth --lambda1 1 --lambda2 1 
+CUDA_VISIBLE_DEVICES=0 python train_rec.py --dataset sport_cloth --lambda1 1 --lambda2 1 
 ```
 
 -->on Sport & Phone:
 ```shell
-CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset sport_phone --lambda1 0.01 --lambda2 1
+CUDA_VISIBLE_DEVICES=0 python train_rec.py --dataset sport_phone --lambda1 0.01 --lambda2 1
 ```
 
 -->on Elec & Cloth:  
 ```shell
-CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset electronic_cloth --lambda1 0.01 --lambda2 1
+CUDA_VISIBLE_DEVICES=0 python train_rec.py --dataset electronic_cloth --lambda1 0.01 --lambda2 1
 ```
 
 ### If you find this paper or codes useful, please cite our paper. Thank you!

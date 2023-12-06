@@ -115,9 +115,8 @@ for epoch in range(1, opt['num_epoch'] + 1):
     with open(log + '/tmp.txt', 'a') as f:
         f.write('epoch:{}, time:{:.2f}, loss:{:.4f}\n'.format(epoch, duration, epoch_all_loss))
 
-    if epoch <= opt['num_epoch'] - 10: # test from final 10 epochs 
+    if epoch <= opt['num_epoch'] - 10: # test on final 10 epochs 
     # if epoch % 1:
-        # pass
         continue
 
     # eval model
