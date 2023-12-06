@@ -3,46 +3,39 @@
 
 This is a pytorch implementation of our paper: "Consistency-guided Preference Disentanglement of Cross Domain Recommendation"  
 
-**Requirements:**  
+## Requirements: 
 ---
 
-python3.9.0
+python=3.9.0
 pytorch=1.12.0
 numpy=1.24.3
 scipy=1.11.1 
 
-**Runing commands**  
+## Runing commands 
 ---
 
-Firstly, cd src. Next, run the codes with the following commands on different scenarios.
----
+### Firstly, cd src. Next, run the codes with the following commands on different scenarios.
 
+```shell
 -->on Elec & Phone: 
-```shell
 CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset electronic_phone --lambda1 1 --lambda2 1 
-```shell
 
 -->on Sport & Cloth: 
-```shell
 CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset sport_cloth --lambda1 1 --lambda2 1 
-```shell
 
 -->on Sport & Phone:
-```shell  
 CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset sport_phone --lambda1 0.01 --lambda2 1
-```shell
 
 -->on Elec & Cloth:  
-```shell
 CUDA_VISIBLE_DEVICES=gpu_num python train_rec.py --dataset electronic_cloth --lambda1 0.01 --lambda2 1
-```shell
+```
 
-**If you find this paper or codes useful, please cite our paper. Thank you!**
+### If you find this paper or codes useful, please cite our paper. Thank you!
 
 ```
 ```
 
-**Acknowledgement**  
+## Acknowledgement
 ---
 This code refers code from: 
 https://github.com/HKUDS/LightGCL
